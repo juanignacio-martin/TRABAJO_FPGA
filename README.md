@@ -1,2 +1,2 @@
-# TRABAJO_FPGA_MExp
+# TRABAJO_FPGA
 Trabajo FPGA asignatura SED 2024-2025
