@@ -3,7 +3,7 @@ Trabajo FPGA asignatura SED 2024-2025
 
 PEAJE AUTOMATICO
 
-Este trabajo se ha desarrollado completamente en la FPGA Nexys A7, cin un codigo desarrollado en lenguaje VHDL a traves de Vivado.
+Este trabajo se ha desarrollado completamente en la FPGA Nexys A7, con un código desarrollado en lenguaje VHDL a traves de Vivado.
 
 DESCRIPCION
 
@@ -25,5 +25,5 @@ Tras obtener una idea del funcionamiento del peaje, se invita al lector a leer l
 
 
 
-Trabajo propuesto y realizado por Juan Ignacio Martin, Iñigo Castells y Álvaro Ribalda para la asignatura Sistemas Electónicos Digitales de cuart curso de Ingeniería Electrónica Industrial y Automática.
+Trabajo propuesto y realizado por Juan Ignacio Martin, Iñigo Castells y Álvaro Ribalda para la asignatura Sistemas Electónicos Digitales de cuarto curso de Ingeniería Electrónica Industrial y Automática.
 
