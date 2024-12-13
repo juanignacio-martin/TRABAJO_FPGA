@@ -1,0 +1,91 @@
+-- VHDL code for Automatic Toll System with a single entity and architecture
+
+entity TollSystem is
+    Port (
+        clk : in std_logic;
+        reset : in std_logic;
+        select_signal : in std_logic_vector(1 downto 0); -- 00: Moto, 01: Coche, 10: Camión
+        coin_inserted : in std_logic_vector(1 downto 0); -- 00: 0.5 EUR, 01: 1 EUR, 10: 2 EUR
+        vehicle_detected : in std_logic;
+        amount_display : out std_logic_vector(7 downto 0); -- Display total inserted in cents
+        change_display : out std_logic_vector(7 downto 0); -- Display change to return in cents
+        barrier_signal : out std_logic -- High to open barrier
+    );
+end TollSystem;
+
+architecture Behavioral of TollSystem is
+    -- Internal signals
+    signal vehicle_type : std_logic_vector(1 downto 0); -- Selected vehicle type
+    signal total_amount : integer range 0 to 999 := 0; -- Total inserted in cents
+    signal required_amount : integer range 0 to 999;
+    signal sufficient_payment : std_logic;
+    signal change : integer range 0 to 999 := 0; -- Change to return in cents
+
+begin
+    -- Vehicle type selection process
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            vehicle_type <= "00"; -- Default to Moto
+        elsif rising_edge(clk) then
+            vehicle_type <= select_signal; -- Capture user selection
+        end if;
+    end process;
+
+    -- Determine required amount based on vehicle type
+    process(vehicle_type)
+    begin
+        case vehicle_type is
+            when "00" => required_amount <= 100; -- Moto: 1 EUR (100 cents)
+            when "01" => required_amount <= 150; -- Coche: 1.5 EUR (150 cents)
+            when "10" => required_amount <= 200; -- Camión: 2 EUR (200 cents)
+            when others => required_amount <= 0;
+        end case;
+    end process;
+
+    -- Payment process
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            change <= total_amount; -- Return all inserted money as change
+            total_amount <= 0;
+            sufficient_payment <= '0';
+        elsif rising_edge(clk) then
+            case coin_inserted is
+                when "00" => total_amount <= total_amount + 50; -- 0.5 EUR (50 cents)
+                when "01" => total_amount <= total_amount + 100; -- 1 EUR (100 cents)
+                when "10" => total_amount <= total_amount + 200; -- 2 EUR (200 cents)
+                when others => null;
+            end case;
+
+            if total_amount >= required_amount then
+                sufficient_payment <= '1';
+                change <= total_amount - required_amount; -- Calculate change
+            else
+                sufficient_payment <= '0';
+                change <= 0;
+            end if;
+        end if;
+    end process;
+
+    -- Display total amount inserted (in cents)
+    amount_display <= std_logic_vector(to_unsigned(total_amount, 8));
+
+    -- Display change to return (in cents)
+    change_display <= std_logic_vector(to_unsigned(change, 8));
+
+    -- Barrier control process
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            barrier_signal <= '0';
+        elsif rising_edge(clk) then
+            if sufficient_payment = '1' and vehicle_detected = '1' then
+                barrier_signal <= '1'; -- Open barrier
+            else
+                barrier_signal <= '0'; -- Keep barrier closed
+            end if;
+        end if;
+    end process;
+
+end Behavioral;
