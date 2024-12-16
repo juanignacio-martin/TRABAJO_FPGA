@@ -92,16 +92,7 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/FSM.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/synchnzr.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../LAB/Practica2/P2/P2_top3/P2_top3/P2_top3.srcs/sources_1/new/synchnzr.vhd"/>
-          <Attr Name="ImportTime" Val="1731492470"/>
+        <FileInfo RelPath="FSM.vhd">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -113,11 +104,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/TRABAJO_FPGA/debouncer.vhd">
+      <File Path="$PSRCDIR/sources_1/new/synchnzr.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/debouncer.vhd"/>
-          <Attr Name="ImportTime" Val="1734349426"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/debouncer.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -144,9 +140,9 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/imports/TRABAJO_FPGA/debouncer_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/imports/new/debouncer_tb.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/debouncer_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/debouncer_tb.vhd"/>
           <Attr Name="ImportTime" Val="1734349426"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -159,10 +155,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/TRABAJO_FPGA/testbench_fsm.vhd">
+      <File Path="$PSRCDIR/sim_1/imports/new/testbench_fsm.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/testbench_fsm.vhd"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/testbench_fsm.vhd"/>
           <Attr Name="ImportTime" Val="1734349426"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
