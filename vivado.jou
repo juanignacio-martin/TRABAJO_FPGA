@@ -3,23 +3,25 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec 16 17:20:04 2024
-# Process ID: 7900
-# Current directory: C:/Users/alvar/Dropbox/PC/Desktop/4 carrera/SED/TRABAJO_FPGA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6564 C:\Users\alvar\Dropbox\PC\Desktop\4 carrera\SED\TRABAJO_FPGA\VHDL_Peaje.xpr
-# Log file: C:/Users/alvar/Dropbox/PC/Desktop/4 carrera/SED/TRABAJO_FPGA/vivado.log
-# Journal file: C:/Users/alvar/Dropbox/PC/Desktop/4 carrera/SED/TRABAJO_FPGA\vivado.jou
-# Running On        :LAPTOP-RDM854N4
+# Start of session at: Mon Dec 16 17:41:02 2024
+# Process ID: 9292
+# Current directory: E:/Nueva carpeta/TRABAJO_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12428 E:\Nueva carpeta\TRABAJO_FPGA\VHDL_Peaje.xpr
+# Log file: E:/Nueva carpeta/TRABAJO_FPGA/vivado.log
+# Journal file: E:/Nueva carpeta/TRABAJO_FPGA\vivado.jou
+# Running On        :DESKTOP-28O1IPC
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
-# Processor Detail  :Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
-# CPU Frequency     :1190 MHz
-# CPU Physical cores:4
-# CPU Logical cores :8
-# Host memory       :12651 MB
-# Swap memory       :2281 MB
-# Total Virtual     :14933 MB
-# Available Virtual :7368 MB
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+# CPU Frequency     :2808 MHz
+# CPU Physical cores:6
+# CPU Logical cores :6
+# Host memory       :8431 MB
+# Swap memory       :1342 MB
+# Total Virtual     :9774 MB
+# Available Virtual :3183 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/alvar/Dropbox/PC/Desktop/4 carrera/SED/TRABAJO_FPGA/VHDL_Peaje.xpr}
+open_project {E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

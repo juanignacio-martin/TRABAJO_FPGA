@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="D:/Datos/Universidad/4.Cuarto/SED/trabajo/TRABAJO_VHDL/TRABAJO_FPGA/VHDL_Peaje.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="97c6c4633b1f4fff8e968c6dce331eec"/>
@@ -99,7 +99,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/peaje.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -120,7 +119,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="FSM"/>
+        <Option Name="TopModule" Val="PEAJE_PARKING"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
