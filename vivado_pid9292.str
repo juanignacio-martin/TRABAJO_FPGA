@@ -265,3 +265,55 @@ selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDI
 // Tcl Message: update_compile_order -fileset sources_1 
 // Elapsed Time for: 'L.f': 04m:48s
 // Elapsed Time for: 'L.f': 04m:50s
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), CTR : COUNTER(Behavioral) (CONTADOR.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), MAQ_ESTADOS : FSM(Behavioral) (FSM.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), MAQ_ESTADOS : FSM(Behavioral) (FSM.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), CTR : COUNTER(Behavioral) (CONTADOR.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), CTR : COUNTER(Behavioral) (CONTADOR.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd), MAQ_ESTADOS : FSM(Behavioral) (FSM.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ap (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "DECODER"); // R (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog8)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+// HOptionPane Warning: 'Please enter a file name. (Create Source File)'
+dismissDialog("Create Source File"); // k (dialog9)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c (dialog7)
+// Tcl Message: close [ open {E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/DECODER.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/DECODER.vhd}} 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // n (dialog10)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:20s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 08m:22s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DECODER(Behavioral) (DECODER.vhd)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DECODER(Behavioral) (DECODER.vhd)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 08m:24s
+selectCodeEditor("DECODER.vhd", 2, 110); // ac (DECODER.vhd)
+// Elapsed time: 14 seconds
+selectCodeEditor("DECODER.vhd", 14, 176); // ac (DECODER.vhd)
+typeControlKey((HResource) null, "DECODER.vhd", 'v'); // ac (DECODER.vhd)

@@ -29,3 +29,6 @@ close [ open {E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/CONTAD
 add_files {{E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/CONTADOR.vhd}}
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+close [ open {E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/DECODER.vhd} w ]
+add_files {{E:/Nueva carpeta/TRABAJO_FPGA/VHDL_Peaje.srcs/sources_1/new/DECODER.vhd}}
+update_compile_order -fileset sources_1
