@@ -41,9 +41,9 @@ entity SYNCH is
            CLK : in std_logic;              --Reloj
            ASYNC_SENSOR: in std_logic;            --Entrada presencia vehiculo
            ASYNC_COINS : in std_logic_vector (N_COIN - 1 downto 0);  --Entradas de monedas
-           ASYNC_TIPE : in std_logic_vector (N_TIPE - 1 downto 0);      --Entradas de tipo de vehiculo
+           ASYNC_TYPE : in std_logic_vector (N_TIPE - 1 downto 0);      --Entradas de tipo de vehiculo
            SYNC_OUT_SENSOR : out std_logic;    --Salida sincronizada sensor
-           SYNC_OUT_TIPE : out std_logic_vector(N_TIPE - 1 downto 0);   --Salida sincronizada tipo
+           SYNC_OUT_TYPE : out std_logic_vector(N_TIPE - 1 downto 0);   --Salida sincronizada tipo
            SYNC_OUT_COINS : out std_logic_vector (N_COIN - 1 downto 0)   --Salida sincronizada monedas
            );
 end SYNCH;
@@ -51,10 +51,10 @@ end SYNCH;
 architecture BEHAVIORAL of SYNCH is
 --Si usas dos registros sincronizadores, el primer registro puede capturar el cambio, pero si el valor está metaestable, el segundo registro tendrá una oportunidad para capturar el valor correctamente, evitando errores.
  signal sreg1_coins : std_logic_vector(N_COIN - 1 downto 0);
- signal sreg1_tipe : std_logic_vector(N_COIN - 1 downto 0);
+ signal sreg1_type : std_logic_vector(N_COIN - 1 downto 0);
  signal sreg1_sensor : std_logic;
  signal sreg2_coins : std_logic_vector(N_COIN - 1 downto 0);
- signal sreg2_tipe : std_logic_vector(N_TIPE - 1 downto 0);
+ signal sreg2_type : std_logic_vector(N_TIPE - 1 downto 0);
  signal sreg2_sensor : std_logic;
 
 begin
@@ -65,7 +65,7 @@ begin
     if rising_edge(CLK) then
         sreg1_sensor <= ASYNC_SENSOR;
         sreg1_coins <= ASYNC_COINS;
-        sreg1_tipe <= ASYNC_TIPE;
+        sreg1_type <= ASYNC_TYPE;
     end if;
  end process;
  
@@ -75,14 +75,14 @@ begin
     if rising_edge(CLK) then
         sreg2_sensor <= sreg1_sensor;
         sreg2_coins <= sreg1_coins;
-        sreg2_tipe <= sreg1_tipe;
+        sreg2_type <= sreg1_type;
     end if;
  end process;
  
 --Asignacion señal sincronizada con salida
 SYNC_OUT_SENSOR <= sreg2_sensor;
 SYNC_OUT_COINS <= sreg2_coins;
-SYNC_OUT_TIPE <= sreg2_tipe;
+SYNC_OUT_TYPE <= sreg2_type;
 
 end BEHAVIORAL;
 
