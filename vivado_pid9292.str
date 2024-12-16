@@ -317,3 +317,34 @@ selectCodeEditor("DECODER.vhd", 2, 110); // ac (DECODER.vhd)
 // Elapsed time: 14 seconds
 selectCodeEditor("DECODER.vhd", 14, 176); // ac (DECODER.vhd)
 typeControlKey((HResource) null, "DECODER.vhd", 'v'); // ac (DECODER.vhd)
+// Elapsed time: 168 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PEAJE_PARKING(Estructural) (peaje.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 41 seconds
+selectCodeEditor("peaje.vhd", 118, 113); // ac (peaje.vhd)
+typeControlKey((HResource) null, "peaje.vhd", 'v'); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 214, 99); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 69, 92); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 70, 143); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 292, 166); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 232, 142); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 252, 135); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 244, 127); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 336, 124); // ac (peaje.vhd)
+// Elapsed time: 21 seconds
+selectCodeEditor("peaje.vhd", 102, 155); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 80, 147); // ac (peaje.vhd)
+typeControlKey((HResource) null, "peaje.vhd", 'v'); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 169, 106); // ac (peaje.vhd)
+// Elapsed time: 28 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+selectCodeEditor("peaje.vhd", 0, 198); // ac (peaje.vhd)
+typeControlKey((HResource) null, "peaje.vhd", 'v'); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 334, 297); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 197, 346); // ac (peaje.vhd)
+// Elapsed time: 28 seconds
+selectCodeEditor("peaje.vhd", 71, 298); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 487, 355); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 452, 330); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 203, 346); // ac (peaje.vhd)
+selectCodeEditor("peaje.vhd", 399, 322); // ac (peaje.vhd)
