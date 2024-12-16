@@ -26,6 +26,7 @@ entity FSM is
         N_VEHICULOS: POSITIVE := 3; --es el numero de tipos de vehiculo (camnion, moto, coche)
         N_ESTADOS: POSITIVE := 7;
         N_DISPLAYS: POSITIVE := 8;
+        SIZE_CUENTA: POSITIVE := 10;
         SIZE_CODE: POSITIVE :=9          
     );
     Port( 
@@ -35,7 +36,7 @@ entity FSM is
         PAGO_OK : in STD_LOGIC;
         TIPO_VEHICULO: in STD_LOGIC_VECTOR (N_VEHICULOS - 1 downto 0);
         --ERROR_COUNTER : in STD_LOGIC;
-        SIGNAL_CHANGE : in STD_LOGIC;
+        SIGNAL_CHANGE : in STD_LOGIC_VECTOR (SIZE_CUENTA - 1 downto 0);
         BARRERA_UP : in STD_LOGIC;
 		BARRERA_DOWN : in STD_LOGIC;
         --CONTROL_IN : in STD_LOGIC_VECTOR (N_DISPLAYS * N_ESTADOS - 1 downto 0);
@@ -81,9 +82,9 @@ begin
                     NEXT_STATE <= S2;
                 end if;                
             when S2 =>
-                if PAGO_OK = '1' AND SIGNAL_CHANGE = '0' then
+                if PAGO_OK = '1' AND SIGNAL_CHANGE = "0000000000" then
                     NEXT_STATE <= S3;
-                elsif SIGNAL_CHANGE = '1' then
+                elsif SIGNAL_CHANGE /= "0000000000" then
                     NEXT_STATE <= S30;
                 end if;
             when S3 =>
@@ -176,4 +177,5 @@ begin
     end process;
 
 end Behavioral;
+
 
