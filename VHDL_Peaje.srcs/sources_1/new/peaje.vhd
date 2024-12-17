@@ -44,9 +44,10 @@ entity PEAJE_PARKING is
         ERROR : out STD_LOGIC;
         BARRERA_UP_LED : out STD_LOGIC;
         BARRERA_DOWN_LED : out STD_LOGIC;
-        ESTADOS: out STD_LOGIC_VECTOR (N_ESTADOS - 1 downto 0)
+        ESTADOS: out STD_LOGIC_VECTOR (N_ESTADOS - 1 downto 0);
         --SEGMENTOS: out STD_LOGIC_VECTOR(N_SEGMENTOS - 1 downto 0);
         --DIGCTRL: out STD_LOGIC_VECTOR(N_DISPLAYS - 1 downto 0)
+        LED: out STD_LOGIC_VECTOR (N_ESTADOS-1 downto 0)
      );
      
 end PEAJE_PARKING;
@@ -101,7 +102,8 @@ component FSM is
         --ESTADOS_OUT : out STD_LOGIC_VECTOR(N_ESTADOS - 1 downto 0);
         --CONTROL_OUT : out STD_LOGIC_VECTOR (N_DISPLAYS - 1 downto 0);
         --CODE_OUT: out STD_LOGIC_VECTOR (SIZE_CODE - 1 downto 0)
-        ESTADO_ACTUAL : out STD_LOGIC_VECTOR(3 downto 0)
+        ESTADO_ACTUAL : out STD_LOGIC_VECTOR(3 downto 0);
+        LED : out STD_LOGIC_VECTOR(N_ESTADOS downto 0)
     );
 end component;
 
@@ -161,10 +163,11 @@ PORT MAP(
     RESET => RESET,
     ERROR => ERROR,
     BARRERA_UP_LED => BARRERA_UP_LED,
-    BARRERA_DOWN_LED => BARRERA_DOWN_LED
+    BARRERA_DOWN_LED => BARRERA_DOWN_LED,
     --ESTADOS_OUT => ESTADOS,
     --CONTROL_OUT => DIGCTRL,
     --CODE_OUT => AUX11
+    LED => LED
 );
    
 end Estructural;

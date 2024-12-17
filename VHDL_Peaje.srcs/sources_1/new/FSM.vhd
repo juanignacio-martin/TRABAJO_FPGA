@@ -48,7 +48,8 @@ entity FSM is
         --ESTADOS_OUT : out STD_LOGIC_VECTOR(N_ESTADOS - 1 downto 0);
         --CONTROL_OUT : out STD_LOGIC_VECTOR (N_DISPLAYS - 1 downto 0);
         --CODE_OUT: out STD_LOGIC_VECTOR (SIZE_CODE - 1 downto 0)
-        ESTADO_ACTUAL : out STD_LOGIC_VECTOR(3 downto 0)
+        ESTADO_ACTUAL : out STD_LOGIC_VECTOR(3 downto 0);
+        LED : out STD_LOGIC_VECTOR(N_ESTADOS -1 downto 0)
     );
 end FSM;
 
@@ -112,12 +113,14 @@ begin
     
     output_control: process(CLK, CURRENT_STATE)
     begin
+        LED <= (others => '0');
         case CURRENT_STATE is 
             when S0 =>
                 ERROR <= '0';
                 BARRERA_UP_LED <= '0';
           		BARRERA_DOWN_LED <= '0';
           		ESTADO_ACTUAL<="0000";
+          		LED(0) <= '1'; -- Enciende LED0
                 --ESTADOS_OUT <= "0001";
                 --CONTROL_OUT <= CONTROL_IN(N_DISPLAYS - 1 DOWNTO 0);
                 --CODE_OUT <= CODE_IN(SIZE_CODE - 1 DOWNTO 0);
@@ -130,6 +133,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
+                 LED(1) <= '1'; -- Enciende LED0
             when S2 =>
                 ERROR <= '0';
                 BARRERA_UP_LED <= '0';
@@ -138,6 +142,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
+                 LED(2) <= '1'; -- Enciende LED0
             when S3 =>
                 ERROR <= '0';
               BARRERA_UP_LED <= '0';
@@ -146,6 +151,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
+               LED(3) <= '1'; -- Enciende LED0
           when S30 =>
                 ERROR <= '0';
                BARRERA_UP_LED <= '0';
@@ -154,6 +160,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
+                 LED(7) <= '1'; -- Enciende LED0
           when S4 =>
                 ERROR <= '0';
                 BARRERA_UP_LED <= '1';
@@ -162,7 +169,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
-         
+                 LED(4) <= '1'; -- Enciende LED0
           when S5 =>
                 ERROR <= '0';
                 BARRERA_UP_LED <= '1';
@@ -171,7 +178,7 @@ begin
                 --ESTADOS_OUT  <= "0010";
                 --CONTROL_OUT <= CONTROL_IN((N_DISPLAYS * 2) - 1 DOWNTO N_DISPLAYS);
                 --CODE_OUT <= CODE_IN((SIZE_CODE * 2) - 1 DOWNTO SIZE_CODE);
-         
+                 LED(5) <= '1'; -- Enciende LED0
         end case;
         
     end process;

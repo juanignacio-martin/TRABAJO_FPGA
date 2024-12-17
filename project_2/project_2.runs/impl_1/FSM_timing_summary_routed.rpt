@@ -1,0 +1,622 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Dec 17 13:35:14 2024
+| Host         : DESKTOP-28O1IPC running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file FSM_timing_summary_routed.rpt -pb FSM_timing_summary_routed.pb -rpx FSM_timing_summary_routed.rpx -warn_on_violation
+| Design       : FSM
+| Device       : 7k70t-fbv676
+| Speed File   : -1  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  7           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (7)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (21)
+5. checking no_input_delay (18)
+6. checking no_output_delay (11)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (7)
+------------------------
+ There are 7 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (21)
+-------------------------------------------------
+ There are 21 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (18)
+-------------------------------
+ There are 18 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (11)
+--------------------------------
+ There are 11 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   32          inf        0.000                      0                   32           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            32 Endpoints
+Min Delay            32 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            LED[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.427ns  (logic 3.614ns (38.337%)  route 5.813ns (61.663%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           5.813     6.082    LED_OBUF[2]
+    J13                  OBUF (Prop_obuf_I_O)         3.345     9.427 r  LED_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     9.427    LED[2]
+    J13                                                               r  LED[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            LED[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.293ns  (logic 3.638ns (49.885%)  route 3.655ns (50.115%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[1]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[1]/Q
+                         net (fo=4, routed)           3.655     3.924    LED_OBUF[1]
+    K15                  OBUF (Prop_obuf_I_O)         3.369     7.293 r  LED_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.293    LED[1]
+    K15                                                               r  LED[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[4]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            LED[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.671ns  (logic 3.669ns (55.005%)  route 3.002ns (44.995%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[4]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.246     0.246 r  FSM_onehot_CURRENT_STATE_reg[4]/Q
+                         net (fo=6, routed)           3.002     3.248    LED_OBUF[6]
+    U17                  OBUF (Prop_obuf_I_O)         3.423     6.671 r  LED_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     6.671    LED[6]
+    U17                                                               r  LED[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[5]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            LED[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.632ns  (logic 3.621ns (54.597%)  route 3.011ns (45.403%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[5]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[5]/Q
+                         net (fo=5, routed)           3.011     3.280    LED_OBUF[4]
+    R18                  OBUF (Prop_obuf_I_O)         3.352     6.632 r  LED_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     6.632    LED[4]
+    R18                                                               r  LED[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[0]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            LED[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.984ns  (logic 3.630ns (60.660%)  route 2.354ns (39.340%))
+  Logic Levels:           2  (FDPE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDPE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[0]/C
+    SLICE_X1Y66          FDPE (Prop_fdpe_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[0]/Q
+                         net (fo=3, routed)           2.354     2.623    LED_OBUF[0]
+    H17                  OBUF (Prop_obuf_I_O)         3.361     5.984 r  LED_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.984    LED[0]
+    H17                                                               r  LED[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[4]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            ESTADO_ACTUAL[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.969ns  (logic 3.058ns (61.537%)  route 1.911ns (38.463%))
+  Logic Levels:           3  (FDCE=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[4]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.246     0.246 r  FSM_onehot_CURRENT_STATE_reg[4]/Q
+                         net (fo=6, routed)           0.600     0.846    LED_OBUF[6]
+    SLICE_X0Y67          LUT4 (Prop_lut4_I0_O)        0.163     1.009 r  ESTADO_ACTUAL_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.312     2.320    ESTADO_ACTUAL_OBUF[0]
+    E25                  OBUF (Prop_obuf_I_O)         2.649     4.969 r  ESTADO_ACTUAL_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     4.969    ESTADO_ACTUAL[0]
+    E25                                                               r  ESTADO_ACTUAL[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            BARRERA_UP_LED
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.930ns  (logic 2.960ns (60.050%)  route 1.969ns (39.950%))
+  Logic Levels:           3  (FDCE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[6]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[6]/Q
+                         net (fo=5, routed)           0.477     0.746    LED_OBUF[5]
+    SLICE_X0Y66          LUT2 (Prop_lut2_I0_O)        0.065     0.811 r  BARRERA_UP_LED_OBUF_inst_i_1/O
+                         net (fo=1, routed)           1.492     2.303    BARRERA_UP_LED_OBUF
+    E23                  OBUF (Prop_obuf_I_O)         2.626     4.930 r  BARRERA_UP_LED_OBUF_inst/O
+                         net (fo=0)                   0.000     4.930    BARRERA_UP_LED
+    E23                                                               r  BARRERA_UP_LED (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            ESTADO_ACTUAL[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.890ns  (logic 2.830ns (57.869%)  route 2.060ns (42.131%))
+  Logic Levels:           3  (FDCE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.773     1.042    LED_OBUF[2]
+    SLICE_X0Y67          LUT3 (Prop_lut3_I0_O)        0.053     1.095 r  ESTADO_ACTUAL_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.287     2.382    ESTADO_ACTUAL_OBUF[1]
+    F24                  OBUF (Prop_obuf_I_O)         2.508     4.890 r  ESTADO_ACTUAL_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     4.890    ESTADO_ACTUAL[1]
+    F24                                                               r  ESTADO_ACTUAL[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[4]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            ESTADO_ACTUAL[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.805ns  (logic 2.907ns (60.499%)  route 1.898ns (39.501%))
+  Logic Levels:           3  (FDCE=1 LUT3=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[4]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.246     0.246 r  FSM_onehot_CURRENT_STATE_reg[4]/Q
+                         net (fo=6, routed)           0.495     0.741    LED_OBUF[6]
+    SLICE_X0Y66          LUT3 (Prop_lut3_I0_O)        0.153     0.894 r  ESTADO_ACTUAL_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.403     2.297    ESTADO_ACTUAL_OBUF[2]
+    G24                  OBUF (Prop_obuf_I_O)         2.508     4.805 r  ESTADO_ACTUAL_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     4.805    ESTADO_ACTUAL[2]
+    G24                                                               r  ESTADO_ACTUAL[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            LED[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.186ns  (logic 2.804ns (66.981%)  route 1.382ns (33.019%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[6]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.269     0.269 r  FSM_onehot_CURRENT_STATE_reg[6]/Q
+                         net (fo=5, routed)           1.382     1.651    LED_OBUF[5]
+    D25                  OBUF (Prop_obuf_I_O)         2.535     4.186 r  LED_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     4.186    LED[5]
+    D25                                                               r  LED[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.205ns  (logic 0.128ns (62.349%)  route 0.077ns (37.651%))
+  Logic Levels:           2  (FDCE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[6]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[6]/Q
+                         net (fo=5, routed)           0.077     0.177    LED_OBUF[5]
+    SLICE_X1Y66          LUT2 (Prop_lut2_I0_O)        0.028     0.205 r  FSM_onehot_CURRENT_STATE[0]_i_1/O
+                         net (fo=2, routed)           0.000     0.205    FSM_onehot_CURRENT_STATE[0]_i_1_n_0
+    SLICE_X1Y66          FDPE                                         r  FSM_onehot_CURRENT_STATE_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[5]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.236ns  (logic 0.100ns (42.426%)  route 0.136ns (57.574%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[5]/C
+    SLICE_X0Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[5]/Q
+                         net (fo=5, routed)           0.136     0.236    LED_OBUF[4]
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.294ns  (logic 0.128ns (43.584%)  route 0.166ns (56.416%))
+  Logic Levels:           2  (FDCE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.166     0.266    LED_OBUF[2]
+    SLICE_X0Y66          LUT3 (Prop_lut3_I0_O)        0.028     0.294 r  FSM_onehot_CURRENT_STATE[3]_i_1/O
+                         net (fo=1, routed)           0.000     0.294    FSM_onehot_CURRENT_STATE[3]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.299ns  (logic 0.133ns (44.529%)  route 0.166ns (55.471%))
+  Logic Levels:           2  (FDCE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.166     0.266    LED_OBUF[2]
+    SLICE_X0Y66          LUT3 (Prop_lut3_I0_O)        0.033     0.299 r  FSM_onehot_CURRENT_STATE[4]_i_1/O
+                         net (fo=1, routed)           0.000     0.299    FSM_onehot_CURRENT_STATE[4]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[0]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.361ns  (logic 0.100ns (27.686%)  route 0.261ns (72.314%))
+  Logic Levels:           1  (FDPE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDPE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[0]/C
+    SLICE_X1Y66          FDPE (Prop_fdpe_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[0]/Q
+                         net (fo=3, routed)           0.261     0.361    LED_OBUF[0]
+    SLICE_X1Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.375ns  (logic 0.100ns (26.640%)  route 0.275ns (73.360%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[1]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[1]/Q
+                         net (fo=4, routed)           0.275     0.375    LED_OBUF[1]
+    SLICE_X1Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[3]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.388ns  (logic 0.128ns (32.963%)  route 0.260ns (67.037%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.152     0.252    LED_OBUF[2]
+    SLICE_X0Y66          LUT6 (Prop_lut6_I2_O)        0.028     0.280 r  FSM_onehot_CURRENT_STATE[6]_i_1/O
+                         net (fo=7, routed)           0.108     0.388    FSM_onehot_CURRENT_STATE[6]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[4]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.388ns  (logic 0.128ns (32.963%)  route 0.260ns (67.037%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.152     0.252    LED_OBUF[2]
+    SLICE_X0Y66          LUT6 (Prop_lut6_I2_O)        0.028     0.280 r  FSM_onehot_CURRENT_STATE[6]_i_1/O
+                         net (fo=7, routed)           0.108     0.388    FSM_onehot_CURRENT_STATE[6]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[5]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.388ns  (logic 0.128ns (32.963%)  route 0.260ns (67.037%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.152     0.252    LED_OBUF[2]
+    SLICE_X0Y66          LUT6 (Prop_lut6_I2_O)        0.028     0.280 r  FSM_onehot_CURRENT_STATE[6]_i_1/O
+                         net (fo=7, routed)           0.108     0.388    FSM_onehot_CURRENT_STATE[6]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_CURRENT_STATE_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_CURRENT_STATE_reg[6]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.388ns  (logic 0.128ns (32.963%)  route 0.260ns (67.037%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  FSM_onehot_CURRENT_STATE_reg[2]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  FSM_onehot_CURRENT_STATE_reg[2]/Q
+                         net (fo=5, routed)           0.152     0.252    LED_OBUF[2]
+    SLICE_X0Y66          LUT6 (Prop_lut6_I2_O)        0.028     0.280 r  FSM_onehot_CURRENT_STATE[6]_i_1/O
+                         net (fo=7, routed)           0.108     0.388    FSM_onehot_CURRENT_STATE[6]_i_1_n_0
+    SLICE_X0Y66          FDCE                                         r  FSM_onehot_CURRENT_STATE_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
