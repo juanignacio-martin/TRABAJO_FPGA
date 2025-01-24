@@ -1,0 +1,22 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_TOP_behav xil_defaultlib.TB_TOP -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.SYN [\SYN(n_monedas=3,n_vehiculos=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.EDGE [\EDGE(n_monedas=3,n_vehiculos=3)...]
+Compiling architecture dataflow of entity xil_defaultlib.DIGITAL [\DIGITAL(n_monedas=3,n_vehiculos...]
+Compiling architecture behavioral of entity xil_defaultlib.COUNTER [\COUNTER(size_cuenta=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.FSM [\FSM(n_monedas=3,n_vehiculos=3,n...]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot TB_TOP_behav

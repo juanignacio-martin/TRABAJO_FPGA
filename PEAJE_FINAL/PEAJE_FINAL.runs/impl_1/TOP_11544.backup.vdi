@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Jan 23 13:31:32 2025
+# Process ID: 11544
+# Current directory: D:/Datos/Universidad/4.Cuarto/SED/LAB/TRABAJOFINAL_VHDL/PEAJE_FINAL/PEAJE_FINAL.runs/impl_1
+# Command line: vivado.exe -log TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP.tcl -notrace
+# Log file: D:/Datos/Universidad/4.Cuarto/SED/LAB/TRABAJOFINAL_VHDL/PEAJE_FINAL/PEAJE_FINAL.runs/impl_1/TOP.vdi
+# Journal file: D:/Datos/Universidad/4.Cuarto/SED/LAB/TRABAJOFINAL_VHDL/PEAJE_FINAL/PEAJE_FINAL.runs/impl_1\vivado.jou
+# Running On        :LAPTOP-H28DHHSO
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency     :1498 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8368 MB
+# Swap memory       :15740 MB
+# Total Virtual     :24109 MB
+# Available Virtual :12499 MB
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "TOP.tcl" line 105)
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 23 13:31:36 2025...

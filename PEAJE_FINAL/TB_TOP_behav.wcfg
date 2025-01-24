@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_TOP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_TOP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="277.773 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="137"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/TB_TOP/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/DETECTOR" type="logic">
+      <obj_property name="ElementShortName">DETECTOR</obj_property>
+      <obj_property name="ObjectShortName">DETECTOR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/DETECTOR_OUT" type="logic">
+      <obj_property name="ElementShortName">DETECTOR_OUT</obj_property>
+      <obj_property name="ObjectShortName">DETECTOR_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/DETECTOR_SALIDA" type="logic">
+      <obj_property name="ElementShortName">DETECTOR_SALIDA</obj_property>
+      <obj_property name="ObjectShortName">DETECTOR_SALIDA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/MONEDAS" type="array">
+      <obj_property name="ElementShortName">MONEDAS[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MONEDAS[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/TIPO_VEHICULO" type="array">
+      <obj_property name="ElementShortName">TIPO_VEHICULO[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TIPO_VEHICULO[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/dinero_total" type="other">
+      <obj_property name="ElementShortName">dinero_total</obj_property>
+      <obj_property name="ObjectShortName">dinero_total</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/Inst_Cont/tarifa" type="other">
+      <obj_property name="ElementShortName">tarifa</obj_property>
+      <obj_property name="ObjectShortName">tarifa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/DISPLAYS_ON" type="array">
+      <obj_property name="ElementShortName">DISPLAYS_ON[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DISPLAYS_ON[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/SEGMENTOS_ON" type="array">
+      <obj_property name="ElementShortName">SEGMENTOS_ON[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SEGMENTOS_ON[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/LED_ESTADO" type="array">
+      <obj_property name="ElementShortName">LED_ESTADO[4:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_ESTADO[4:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/N_MONEDAS" type="other">
+      <obj_property name="ElementShortName">N_MONEDAS</obj_property>
+      <obj_property name="ObjectShortName">N_MONEDAS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/N_VEHICULOS" type="other">
+      <obj_property name="ElementShortName">N_VEHICULOS</obj_property>
+      <obj_property name="ObjectShortName">N_VEHICULOS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/N_ESTADOS" type="other">
+      <obj_property name="ElementShortName">N_ESTADOS</obj_property>
+      <obj_property name="ObjectShortName">N_ESTADOS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/SIZE_CUENTA" type="other">
+      <obj_property name="ElementShortName">SIZE_CUENTA</obj_property>
+      <obj_property name="ObjectShortName">SIZE_CUENTA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/SEGMENTOS" type="other">
+      <obj_property name="ElementShortName">SEGMENTOS</obj_property>
+      <obj_property name="ObjectShortName">SEGMENTOS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/paid" type="logic">
+      <obj_property name="ElementShortName">paid</obj_property>
+      <obj_property name="ObjectShortName">paid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/tipoEdge" type="array">
+      <obj_property name="ElementShortName">tipoEdge[2:0]</obj_property>
+      <obj_property name="ObjectShortName">tipoEdge[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/Inst_Dig/DINERO" type="other">
+      <obj_property name="ElementShortName">DINERO</obj_property>
+      <obj_property name="ObjectShortName">DINERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/Inst_Cont/cambio" type="other">
+      <obj_property name="ElementShortName">cambio</obj_property>
+      <obj_property name="ObjectShortName">cambio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_TOP/UUT/Inst_Cont/CHANGE" type="array">
+      <obj_property name="ElementShortName">CHANGE[9:0]</obj_property>
+      <obj_property name="ObjectShortName">CHANGE[9:0]</obj_property>
+   </wvobject>
+</wave_config>
